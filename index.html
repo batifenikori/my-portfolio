@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my web page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7fef2f1234.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <P>UI/UX Designer</P>
+                <h1>Hi, I'm <span>Batife</span><br> Johnson from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/WhatsApp Image 2023-09-22 at 11.51.36 AM.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey, I'm Batife, a passionate designer crafting captivating websites and intuitive apps. 
+                        I merge aesthetics with functionality to create seamless digital experiences. 
+                        Whether reshaping social media or designing music apps, I believe in making tech user-friendly and enjoyable.
+                         Let's explore design possibilities together!
+
+                       <div class="tab-titles">
+                          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                          <p class="tab-links" onclick="opentab('exprience')">Exprience</p>
+                          <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="exprience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Web Design Training at Indeth-Hub</li>
+                            <li><span>2021 - 2022</span><br>Graphics Design at Indepth-Hub</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at W3schools</li>
+                            
+
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Web Design Training at Indepth-Hub</li>
+                            <li><span>2023</span><br>App design<In/li>
+                            <li><span>2023</span><br>--------------------</li>
+
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------Service---------- -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I'm all about making websites that don't just look pretty but also feel like a breeze to navigate.
+                     Think of it as creating a digital space where visitors can explore effortlessly and actually enjoy their time online.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> I go beyond just making things look good on screens. 
+                        My thing is creating interfaces that not only catch your eye but also make sense when you start poking around. 
+                        It's all about making sure your time with the app or website is smooth and, dare I say, enjoyable.
+                        </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I don't just design apps; I craft experiences. It's not just about making them look cool but making sure they're a joy to use. 
+                        So, you get an app that not only looks good on your phone but also makes your life a bit easier or more fun.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/social media 2.jpg">
+                    <div class="layer"> 
+                        <h3>Social Media</h3>
+                        <p>Ever seen a brand on social media that just feels right? That's the kind of vibe I aim for.
+                             I cook up designs that don't just get your attention but also make you want to hit that follow button. 
+                             It's about creating a social media presence that feels like a friend, not just a brand.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Music app3.jpg">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>If you love music, my music app designs are like a concert for your eyes.
+                             It's not just about buttons and screens; it's about creating an experience that vibes with the music.
+                              So, when you're using the app, it's not just functional; it's an extension of the music itself.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/my work-3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping app</h3>
+                        <p>Online shopping shouldn't feel like a chore. My designs are all about making it a joyride. 
+                            Picture a place where you find what you want without getting lost, and the checkout is smoother than ever. 
+                            It's about turning online shopping into something you look forward to, not just something you have to do.
+                        </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------------contact--------------- -->
+    <div id="container">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> idowumarvellous80@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>09152328323</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form   action="https://formspree.io/f/myyqaryg" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required> 
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Batife. <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+
+
+
+</body>   
+</html>
